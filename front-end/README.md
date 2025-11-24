@@ -46,10 +46,10 @@ npm install
 
 Abra o arquivo `services/api.ts` e ajuste o `baseURL`:
 
-// Para emulador Android
+- Para emulador Android
 baseURL: 'http://10.0.2.2:3000/api'
 
-// Para Expo Go no celular (substitua pelo IP do seu computador)
+- Para Expo Go no celular (substitua pelo IP do seu computador)
 baseURL: 'http://SEU_IP:3000/api'
 
 4. Iniciar o projeto
