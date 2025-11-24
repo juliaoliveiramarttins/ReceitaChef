@@ -39,8 +39,9 @@ Aplicativo mobile de gerenciamento de receitas culinárias desenvolvido com Reac
 
 2. Instale as dependências:
 
+```
 npm install
-
+```
 3. Configure a URL da API:
 
 Abra o arquivo `services/api.ts` e ajuste o `baseURL`:
@@ -52,9 +53,9 @@ baseURL: 'http://10.0.2.2:3000/api'
 baseURL: 'http://SEU_IP:3000/api'
 
 4. Iniciar o projeto
-
+```
 npx expo start
-
+```
 
 ### Opções de execução
 
