@@ -1,4 +1,4 @@
-# 🍳 CookNote - App de Receitas
+# 🍳 ReceitaChef - App de Receitas
 
 Aplicativo mobile de gerenciamento de receitas culinárias desenvolvido com React Native e Expo.
 
