@@ -1,4 +1,4 @@
-# 🍳 CookNote API - Backend
+# 🍳 ReceitaChef API - Backend
 
 API RESTful para gerenciamento de receitas culinárias desenvolvida com Node.js, Express e MySQL.
 
@@ -34,16 +34,17 @@ API RESTful para gerenciamento de receitas culinárias desenvolvida com Node.js,
 
 2. Instale as dependências:
 
-<!-- - npm install -->
+```
+npm install
+ ```
 
 3. Configure o banco de dados:
 
-Crie um banco de dados MySQL chamado `receitas_db`:
+- Crie um banco de dados MySQL chamado `receitas_db`:
 
+```
 CREATE DATABASE receitas_db;
 USE receitas_db;
-
-4. Execute o script de criação das tabelas:
 
 -- Tabela de Usuários
 CREATE TABLE usuarios (
@@ -76,30 +77,34 @@ nome_ingrediente VARCHAR(100) NOT NULL,
 quantidade VARCHAR(50),
 unidade_medida VARCHAR(50),
 FOREIGN KEY (id_receita) REFERENCES receitas(id_receita) ON DELETE CASCADE
-);  
-
+);
+```
 
 5. Configure as credenciais do MySQL:
 
-Edite o arquivo `config/database.js`:
-
+- Edite o arquivo `config/database.js`:
+```
 const connection = mysql.createConnection({
 host: 'localhost',
 user: 'seu_usuario', // Altere aqui
 password: 'sua_senha', // Altere aqui
 database: 'receitas_db'
 });
-
+```
 
 ## ▶️ Executando o Projeto
 
 ### Desenvolvimento (com hot reload)
 
+```
 npm run dev
+```
 
 ### Produção
 
+```
 npm start
+```
 
 
 O servidor estará rodando em: `http://localhost:3000`
@@ -162,23 +167,33 @@ unidade_medida (VARCHAR 50)
 
 - Verifique se o MySQL está rodando
 
+```
 mysql -u root -p
+```
 
 - Teste a conexão
 
+```
 USE receitas_db;
 SHOW TABLES;
+```
 
 ## 📊 Scripts Disponíveis
+ 
+# Inicia o servidor
 
-npm start # Inicia o servidor
-
-npm run dev # Inicia com nodemon (hot reload)
-
+```
+npm start
+```
+# Inicia com nodemon (hot reload)
+```
+npm run dev
+``` 
 
 
 ## 👥 Autores
 
 - Julia Martins - Desenvolvimento
+
 
 
